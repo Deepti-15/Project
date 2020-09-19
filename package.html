@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<title>Book Your Tour</title>
+		<!--<link rel="stylesheet" href="css/login.css">-->
+		
+		<style>
+			*{
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+}
+
+.hero{
+	height:100%;
+	width:100%;
+	background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../img/login.jpg);
+	background-position:center;
+	background-size:cover;
+	position:absolute;
+}
+.form-box{
+	width:380px;
+	height:580px;
+	position:relative;
+	margin:6% auto;
+	background:white;
+	padding:5px;
+	border:1px  solid red ;
+	overflow:hidden;
+	
+}
+.input-group{
+	top:0px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+
+.input-field{
+	width:100%;
+	padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-right:0;
+	border-top:0;
+	border-bottom:1px solid #999;
+	outline:none;
+	background:transparent;
+}
+
+.submit-btn{
+	width:85%;
+	padding:10px 30px;
+	cursor:pointer;
+	display:block;
+	margin:auto;
+	background:linear-gradient(to right,#ff105f,#ffad06);
+	border:0;
+	outline:none;
+	border-radius:30px;
+}
+.chech-box{
+	margin:30px 10px 30px 0;
+}
+
+.span{
+	color:#777;
+	font-size:12px;
+	bottom:68px;
+	position:absolute;
+}
+
+		</style>
+	</head>
+	<body> 
+	<div class="hero">
+	
+		<div class="form-box">
+					
+					<form method="post" action="package" id="login" class="input-group">
+					<h3 colspan="7" style="padding:20px"><u>Book Your Tour</u></h3></br></br>
+					
+			<input type="text" class="input-field " placeholder=" tour_code"   name="tc" required></br></br>
+			<input type="text" class="input-field " placeholder="tour_name"  name="tn" required></br></br>
+			<!--  <input type="text" class="input-field " placeholder="number_of_seats" name="seat"  pattern="[1-9]{2}"  max="2"  required></br></br>-->
+			<input type="text" class="input-field " placeholder="number_of_seats" name="seat"  value="" pattern="[0-9]{2}" data-minlength="1" data-minlength="2"  data-component="textbox" aria-labelledby="label_14" minlength="1" maxlength="2" max="45" required=""/></br>
+			<input type="date" class="input-field " placeholder="date" name="dates" min="2019-11-22"  required></br></br>
+			<span>For online payment refer the below details</span></br></br>
+			<span>acc.no-12321232121 </br> phone no.-9876789876</span></br></br>
+			<button type="submit" class="submit-btn"> submit</button> </br></br>
+			      <a href="terms.html" class="btn-get-started" >Terms and Conditions </a>
+			
+			</form>    
+			   
+		</div>
+	</div>
+	</body>
+</html>
+			
